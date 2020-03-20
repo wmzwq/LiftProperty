@@ -1,0 +1,153 @@
+page-order-details {
+
+  ion-content {
+    background-color: #F7F7FA !important;
+  }
+
+  .list-title {
+    padding: 0.2rem 1.6rem 0 1.6rem;
+  }
+
+  .list-title:first-child {
+    margin-top: 0.8rem;
+  }
+
+  ion-card {
+    box-shadow: none !important;
+  }
+
+  .card-ios,
+  .card-md {
+    margin: 0.6rem 1.2rem 1.2rem 1rem;
+  }
+
+  //维保总用时
+  .mission-content,
+  .card-padding {
+    padding: 1rem 0;
+  }
+
+  .mission-content p:nth-child(2) {
+    color: #454F63;
+  }
+
+  .mission-content p:nth-child(3),
+  .progress-on p,
+  .row-content ion-col {
+    font-size: 1.2rem !important;
+  }
+
+  .progress-back p,
+  .mission-content p:nth-child(3),
+  .list-title {
+    color: #78849E;
+  }
+
+  .mission-content span:nth-child(4) {
+    display: block;
+    width: 100%;
+    height: 0.1rem;
+    background-color: #F0F0F0;
+    margin: 1rem 0;
+  }
+
+  .progress-on > div:nth-child(odd) {
+    width: 40%;
+    display: inline-block;
+  }
+
+  .progress-on p {
+    margin-top: 0.4rem;
+  }
+
+  .checked,
+  .uncheck {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .checked {
+    background-color: #78849E;
+  }
+
+  .uncheck {
+    border: 2px solid #78849E;
+  }
+
+  .dot-gather {
+    width: 15%;
+    max-height: 3.6rem;
+    display: inline-block;
+  }
+
+  .dot-gather div {
+    margin: 0.2rem;
+    display: inline-block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background-color: #D8DBE3;
+    border-radius: 10px;
+  }
+
+  //任务详情
+  .row-content ion-col {
+    padding: 0.6rem 0;
+  }
+
+  .row-content ion-icon {
+    font-size: 1rem !important;
+  }
+
+  .row-content p {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+  ion-row{
+    padding: 0.8rem;
+  }
+  .row-type ion-col:last-child{
+      color: #78849E;
+  }
+
+  .line {
+    float: left;
+    width: 3px;
+    height: 16px;
+    border-radius: 6px;
+    margin-right: 0.8rem;
+    background-color: #2699FB;
+  }
+
+  .grid {
+    padding: 0;
+  }
+
+  span [name*=more] {
+    margin-left: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  ion-row {
+    border-bottom: 1px solid #F0F0F0;
+    color: #333;
+  }
+
+  ion-grid ion-row:last-child {
+    border-bottom: none;
+  }
+
+  //维修记录
+  .photo-container {
+    padding: 1rem;
+  }
+
+  .photo-container div {
+    margin: 0 auto;
+    width: 80%;
+    background-color: #D9E1F2;
+    height: 6rem;
+  }
+}

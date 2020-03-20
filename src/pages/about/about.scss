@@ -1,0 +1,103 @@
+page-about {
+
+  ion-content {
+    background-color: #fcfcfd !important;
+  }
+
+  //title
+  .bar-button-default-md,
+  .bar-button-default-ios {
+    color: #78849E;
+  }
+
+  .bar-button-ios {
+    font-size: 1.6rem;
+  }
+
+  .bar-button-md {
+    height: 22px;
+  }
+
+  .toolbar-ios,
+  .toolbar-md {
+    min-height: 4.8rem !important;
+  }
+
+  .toolbar-ios .segment-button,
+  .toolbar-md .segment-button {
+    max-width: 100%;
+    height: 4.7rem;
+    line-height: 4.6rem;
+    border-top: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    border-bottom: none;
+    border-left: none;
+    color: #959DAD;
+  }
+
+  //banner
+  .banner {
+    margin: 1.4rem 1.2rem 1rem 1.2rem;
+    min-height: 10rem;
+    background: url(../../assets/imgs/device_banner.png) no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .num-con {
+    display: inline-block;
+    margin: 2.6rem 2.6rem;
+    color: white;
+  }
+
+  .num-con p {
+    font-size: 2.4rem;
+    font-weight: normal;
+    margin: 0.4rem;
+  }
+
+  .num-con span,
+  .num-detail span {
+    font-size: 1.2rem;
+  }
+
+  .list-title {
+    color: #78849E;
+    margin: 1.6rem 0 0.8rem 1.8rem;
+  }
+
+  //分区卡片
+  .line {
+    width: 90%;
+    margin: 0 auto;
+    height: 0.1rem;
+    background-color: #F0F0F0;
+  }
+
+  .num-detail {
+    display: inline-block;
+    margin: 0.8rem 2.4rem;
+  }
+
+  ion-item {
+    font-size: 1.4rem !important;
+    color: #333333 !important;
+  }
+
+  ion-item ion-icon {
+    color: #3497FD;
+    margin-right: 0.8rem;
+  }
+
+  .num-detail span {
+    color: #78849E;
+  }
+
+  .num-detail p {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .item-block {
+    min-height: 3.6rem;
+  }
+}

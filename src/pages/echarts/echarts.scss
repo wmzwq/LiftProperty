@@ -1,0 +1,60 @@
+page-echarts {
+ 
+        ion-content {
+          background: linear-gradient(180deg, #FFFFFF 10%, #F7F7FA 30%);
+        }
+      
+        div {
+          color: #454F63;
+        }
+      
+        .title {
+          margin-left: 8px;
+        }
+      
+        .chart-con,
+        .info-con {
+          width: 100%;
+          margin: 8px 0 16px 0;
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0px 4px 16px rgba(69, 91, 99, 0.078);
+          overflow: hidden;
+        }
+      
+        .chart-con {
+          height: 20rem;
+        }
+      
+        #chart {
+          width: 98%;
+          height: 120%;
+          margin: -2rem 0 0 1rem;
+        }
+      
+        .info-con {
+          height: 17rem;
+        }
+      
+        ion-icon{
+          font-size: 1.4rem;
+        }
+      
+        span{
+          font-size: 1.2rem;
+          margin-left: 8px;
+          color: #666;
+        }
+      
+        .item-md p,.item-ios p{
+          color: #333;
+          margin-left: 22px;
+        }
+      
+        .info-con ion-item:last-child .item-inner{
+          border-bottom: none;
+        }
+      canvas{
+        top: -32px !important;
+      }
+}

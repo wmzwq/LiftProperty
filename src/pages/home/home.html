@@ -1,0 +1,183 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>首页</ion-title>
+    <ion-buttons left>
+      <button ion-button icon-only (tap)="gotoUserPage()">
+        <ion-icon name="menus"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (tap)="gotoMessagePage()">
+        <ion-icon name="message"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <ion-toolbar no-border-top style="padding: 0;min-height:3.6rem;" (swipe)="swipeEvnet($event)">
+    <ion-segment [(ngModel)]="segmentModel" (ionChange)="segmentChanged($event)" >
+      <ion-segment-button value="safetyAnaly"  >
+        安全分析
+      </ion-segment-button>
+      <ion-segment-button value="maintenance">
+        电梯维护
+      </ion-segment-button>
+      <ion-segment-button value="annualSurvey">
+        预期年检
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <div (swipe)="swipeEvent($event)">
+    <div id="m" >
+      <ion-card style="position: relative;margin-top: 1.4rem;" (tap)="gotoLiftPage()">
+          <div id="chart" class="analy-container" style="width: 100%;height: 15rem;"></div>
+          <div class="child-div" id="child1">
+            <p style="margin-left: 15px;font-size: 2.6rem;">{{tasksNumber}}</p>
+            <span >电梯总数</span>
+          </div>
+          <div class="child-div" id="child2">
+            <p style="margin-left: 15px;font-size: 2.6rem;">90</p>
+            <div class="child-footer ">
+              <span class="blue-dot-big abnormal"></span>
+              <p text-center class="child-p">逾期</p>
+            </div>
+          </div>
+          <div class="chart-hint" id="chart-hint">
+            <span class="blue-dot-big numberList"></span>
+            <label class="calendar-hint">全部电梯 50</label>
+          </div>
+          <div class="chart-footer" id="chart-footer">
+            <div class="child-footer">
+            <span class="blue-dot-big normal"></span>
+            <p text-center class="child-p">正常</p>
+          </div>
+
+          <div class="child-footer ">
+            <span class="blue-dot-big abnormal"></span>
+            <p text-center class="child-p">异常</p>
+          </div>
+
+          <div class="child-footer ">
+            <span class="blue-dot-big offline"></span>
+            <p text-center class="child-p">离线</p>
+          </div>
+          </div>
+        </ion-card>
+      </div>
+  <div [ngSwitch]="segmentModel">
+    <ion-list *ngSwitchCase="'safetyAnaly'">
+      <safety-analy></safety-analy>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'maintenance'" >
+      <ion-card style="position: relative;">
+        <div class="chart-hint">
+          <span class="blue-dot-big"></span>
+          <label class="calendar-hint">全部电梯 50</label>
+        </div>
+        <!-- <div id="chart" class="chart-container"></div> -->
+        <!-- <div #chartMaintain ></div> -->
+        <div class="chart-footer">
+          <p text-center style="font-size: 3.6rem;">10</p>
+          <p text-center>已逾期</p>
+        </div>
+      </ion-card>
+      <div class="list-title">最近完成</div>
+      <ion-card class="lift-list" (tap)="gotoMaintainPage()">
+        <div class="time-side" text-center>
+          <p>维保日期</p>
+          <span class="blue-dot"></span>
+          <label>2019/06/25</label>
+        </div>
+        <div>
+          <span class="v-line"></span>
+        </div>
+        <div style="width: 56%;">
+          <div class="lift-info">
+            <ion-icon name="lift-name"></ion-icon>
+            <span>创业中心1号楼</span>
+          </div>
+          <div class="lift-info">
+            <ion-icon name="position" text-center></ion-icon>
+           <span>鹿城创业中心</span>
+          </div>
+          <div class="lift-info">
+            <ion-icon name="mission-type" text-center></ion-icon>
+            <span>半月保</span>
+          </div>
+        </div>
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'annualSurvey'">
+      <!-- <ion-card>
+        <ion-calendar #calendar class="calendar-mark">
+          <ion-grid>
+            <ion-row justify-content-center class="calendar-header">
+              <ion-col col-auto (tap)="back()">
+                <ion-icon ios="ios-arrow-back" md="md-arrow-back"></ion-icon>
+              </ion-col>
+              <ion-col col-auto>
+                <div>{{displayYear}} 年 {{displayMonth + 1}} 月</div>
+              </ion-col>
+              <ion-col col-auto (tap)="forward()">
+                <ion-icon ios="ios-arrow-forward" md="md-arrow-forward"></ion-icon>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col class="center calendar-header-col" *ngFor="let head of weekHead">{{head}}</ion-col>
+            </ion-row>
+            <ion-row class="calendar-row" *ngFor="let week of weekArray;let i = index">
+              <ion-col class="center calendar-col" (tap)="daySelect(day,i,j)" *ngFor="let day of week;let j = index"
+                [ngClass]="[day.isThisMonth?'this-month':'not-this-month',day.isToday?'today':'',day.isSelect?'select':'']">
+                {{day.date}}
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        </ion-calendar>
+        <div>
+          <ion-item text-center>
+            <span class="blue-dot"></span>
+            <label class="calendar-hint">预期年检</label>
+            <span class="red-dot"></span>
+            <label class="calendar-hint">即将逾期</label>
+          </ion-item>
+        </div>
+      </ion-card> -->
+      <div id="delay" style="display:none"> 
+        <img src="assets/imgs/no.png" style="margin-left: 27px; margin-top: 52px;">
+        <p style="text-align: center;font-size: 18px;">暂无年检电梯信息</p>
+      </div>   
+      <div class="list-title" id="list-title">
+        年检电梯
+      </div>
+      <ion-card class="lift-list" *ngFor="let item of annualInspection">
+        <div class="time-side" text-center>
+          <p>年检日期</p>
+          <span class="blue-dot"></span>
+          <label>{{(item.F_AnnualInspectionTime).substring(0,10)}}</label>
+        </div>
+        <div>
+          <span class="v-line"></span>
+        </div>
+        <div>
+          <div class="lift-info">
+            <ion-icon name="device"></ion-icon>
+           <span>{{item.F_ProjectName}}</span>
+          </div>
+          <div class="lift-info">
+            <ion-icon name="lift-name"></ion-icon>
+            <span>{{item.Ename}}</span>
+          </div>
+          <div class="lift-info">
+            <ion-icon name="position" text-center></ion-icon>
+            <span>{{item.Eaddress}}</span>
+          </div>
+        </div>
+      </ion-card>
+    </ion-list>
+  </div>
+</div>
+</ion-content>

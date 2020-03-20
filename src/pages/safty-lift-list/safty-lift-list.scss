@@ -1,0 +1,89 @@
+page-safty-lift-list {
+
+  ion-content {
+    background-color: #fcfcfd !important;
+  }
+
+  //segment
+  .segment-ios .segment-button,
+  .segment-md .segment-button {
+    color: #78849E;
+    border-style: none;
+  }
+
+  .toolbar-ios .segment-button,
+  .toolbar-md .segment-button {
+    max-width: 70px;
+    height: auto;
+  }
+
+  .toolbar-ios .segment-button div,
+  .toolbar-md .segment-button div {
+    width: 35%;
+    height: 0.25rem;
+  }
+
+  .segment-ios .segment-button.segment-activated,
+  .segment-md .segment-button.segment-activated {
+    color: #454F63;
+    background: none;
+    font-size: 1.4rem;
+  }
+
+  .segment-ios .segment-button.segment-activated div,
+  .segment-md .segment-button.segment-activated div {
+    width: 35%;
+    height: 0.25rem;
+    background-color: #2699FB;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+
+  .segment-md .segment-button {
+    line-height: 2rem;
+  }
+
+  //离线列表
+  .card-container{
+    margin-top: 1.2rem;
+  }
+  .project-name{
+    margin-left: 0.8rem
+  }
+  .status{
+    color: #959DAD;
+  }
+  .line {
+    width: 90%;
+    margin: 0 auto;
+    height: 0.1rem;
+    background-color: #F0F0F0;
+  }
+
+  ion-item {
+    font-size: 1.4rem !important;
+    color: #333333 !important;
+  }
+
+  ion-item ion-icon {
+    color: #454F63;
+  }
+
+  .item-block {
+    min-height: 3.6rem;
+  }
+
+  .blue-dot-big {
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.9rem;
+    border-radius: 3px;
+    background-color: #3497FD;
+    margin-right: 0.5rem;
+  }
+  .more{
+    font-size: 1.4rem;
+    color:#78849E;
+    margin-left: 0.4rem;
+  }
+}

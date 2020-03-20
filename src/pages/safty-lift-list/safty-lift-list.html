@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>电梯列表</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top style="padding: 0;min-height:3rem;">
+    <ion-segment [(ngModel)]="mainPage" (ionChange)="segmentChanged($event)" >
+      <ion-segment-button value="off-line">
+        离线电梯
+        <div></div>
+      </ion-segment-button>
+      <ion-segment-button value="abnormal">
+        异常电梯
+        <div></div>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="mainPage">
+    <ion-list *ngSwitchCase="'off-line'">
+        <div id="delay" style="display:none"> 
+            <img src="assets/imgs/no.png" style="margin-left: 27px; margin-top: 52px;">
+            <p style="text-align: center;font-size: 18px;">暂无离线电梯信息</p>
+          </div>   
+      <ion-card class="card-container"  *ngFor="let item of off">
+        <ion-item>
+          <span class="blue-dot-big"></span><span #name>{{item.F_ProjectName}}</span><span item-right>{{item.data.length}}台</span>
+        </ion-item>
+        <div class="line"></div>
+        <div>
+          <ion-item (tap)="gotoAbDetailsPage()"  *ngFor="let m of item.data" >
+            <ion-icon name="offline"></ion-icon><span class="project-name">{{m}}</span>
+            <span item-right class="status">离线<ion-icon name="more" class="more"></ion-icon></span>
+          </ion-item>
+        </div>
+        <div class="line"></div>
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'abnormal'">
+        <div id="delay" style="display:none"> 
+            <img src="assets/imgs/no.png" style="margin-left: 27px; margin-top: 52px;">
+            <p style="text-align: center;font-size: 18px;">暂无异常电梯信息</p>
+          </div>   
+      <ion-card class="card-container" *ngFor="let item of fau">    
+        <ion-item>
+          <span class="blue-dot-big"></span><span>{{item.F_ProjectName}}</span><span item-right>{{item.data.length}}台</span>
+        </ion-item>
+        <div class="line"></div>
+        <div>
+          <ion-item (tap)="gotoAbDetailsPage()" *ngFor="let m of item.data">
+            <ion-icon name="Trining-alarm"></ion-icon><span class="project-name">{{m}}</span>
+            <span item-right class="status">异常<ion-icon name="more" class="more"></ion-icon></span>
+          </ion-item>
+        </div>
+        <div class="line"></div>       
+      </ion-card>
+    </ion-list>
+  </div>
+</ion-content>

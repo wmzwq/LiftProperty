@@ -1,0 +1,57 @@
+page-maintenance-history {
+  ion-content {
+    background-color: #fcfcfd !important;
+  }
+
+  //banner
+  .banner {
+    background: url(../../assets/imgs/maintain-banner.png) no-repeat;
+    background-size: 100%;
+    height: 9rem;
+    padding: 2rem 0;
+  }
+  
+  .banner div {
+    width: 31%;
+    display: inline-block;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .banner div span {
+    font-size: 2.4rem;
+  }
+
+  .banner div p {
+    margin: 6px 0;
+  }
+
+  .line {
+    display: inline-block;
+    width: 2px;
+    height: 2rem;
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  //维保记录
+  .title {
+    margin: 16px 0 8px 8px;
+    color: #666;
+  }
+
+  .record div {
+
+  }
+.info{
+    display: inline-block;
+}
+  .blue-button {
+    float: right;
+    background-color: #4D9CDF;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 3px;
+  }
+}

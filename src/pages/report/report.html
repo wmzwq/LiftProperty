@@ -1,0 +1,37 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title  >报修</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <ion-item-group class="card-bg">
+    <ion-item>
+      <ion-label>选择电梯</ion-label>
+      <ion-select [(ngModel)]="ecl" submitText="确定" cancelText="取消">
+        <ion-option value="choose">未选择</ion-option>
+        <ng-container *ngFor="let item of eleList" >
+          <ion-option value={{item.F_EcollectionId}} >{{item.Ename}}</ion-option>
+        </ng-container>
+      </ion-select>
+    </ion-item>
+    <ion-item  ><span>报修人</span><input item-right class="card-span" [(ngModel)]="people" placeholder="xxx"></ion-item>
+    <ion-item  ><span>报修人电话</span><input item-right class="card-span" [(ngModel)]="phone" placeholder="xxx"></ion-item>
+  </ion-item-group>
+  <div class="card-div">
+  <div class="div-header">
+   <span class="top-line"></span>
+   <span class="top-header">报修内容</span>
+   <span class="top-add"><ion-icon name="add"></ion-icon></span>
+  </div>
+  <div >
+   <textarea class="card-message" [(ngModel)]="message"  ></textarea>
+  </div>
+  <div padding class="btn">
+    <button ion-button block (tap)="repair()">
+      确认报修
+    </button>
+  </div>
+  </div>
+</ion-content>

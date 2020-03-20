@@ -1,0 +1,94 @@
+page-realtime {
+    .myBtn {
+        height: 28px;
+        border-radius: 4px;
+        width: 96px;
+        margin-left: 16px;
+        border: none;
+        background-color: #6C87B7;
+        color: #fff;
+        float: left;
+        cursor: pointer;
+        padding: 4px;
+    }
+
+        .myBtn img {
+            width: 23px;
+            height: 23px;
+            margin-left: 6px;
+            float: left;
+        }
+
+    .tool {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .mybtn span {
+        margin-left: 4px;
+        line-height: 35px;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+
+    .video {
+        max-width: 600px;
+        width: 100%;
+        max-height: 400px;
+        height: 100%;
+    }
+
+    .myVideo {
+        max-width: 600px;
+        width: 100%;
+        max-height: 400px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    select {
+        font-family: inherit;
+    }
+
+    .m-wrap {
+        background-color: #ffffff;
+        background-image: none !important;
+        filter: none !important;
+        border: 1px solid #e5e5e5;
+        outline: none;
+    }
+
+    .btnclick {
+        background: #2f435e;
+        color: #f2f2f2;
+        font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+        font-weight: bold;
+        border-radius: 3px;
+        -webkit-transition: all linear 0.30s;
+        -moz-transition: all linear 0.30s;
+        transition: all linear 0.30s;
+        padding: 8px;
+    }
+
+    .ss {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+        .ss label {
+            margin-top: 8px;
+        }
+
+        .ss span {
+            margin-top: 8px;
+        }
+}

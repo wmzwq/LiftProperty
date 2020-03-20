@@ -1,0 +1,70 @@
+<ion-content>
+  <div class="header">
+    <ion-navbar no-border-bottom>
+      <ion-buttons right>
+        <button ion-button icon-only (tap)="setup()">
+          <ion-icon name="report-repair"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar>
+    <div>
+      <div class="portrait" text-center (tap)="doCamera()">
+          <img  *ngIf="base64Image" [src]="base64Image">
+        <ion-icon name="person"></ion-icon>
+      </div>
+      <div class="info">
+        <p>{{F_RealName}}</p>
+        <span>物业端</span>
+      </div>
+    </div>
+  </div>
+  <div class="center-card">
+    <div>
+      <p>{{eleNumber}}</p>
+      <span>在保电梯数</span>
+    </div>
+    <span></span>
+    <div>
+      <p>{{cellNumber}}</p>
+      <span>在保小区数</span>
+    </div>
+  </div>
+  <div class="radius-box">
+    <div>
+      <div class="circle" text-center>
+        <ion-icon name="account"></ion-icon>
+      </div>
+      <div class="information">
+        <p>账号</p>
+        <span>{{F_Account}}</span>
+      </div>
+    </div>
+    <div>
+      <div class="circle" text-center>
+        <ion-icon name="tel"></ion-icon>
+      </div>
+      <div class="information">
+        <p>手机</p>
+        <span>{{F_Telephone}}</span>
+      </div>
+    </div>
+    <div>
+      <div class="circle" text-center>
+        <ion-icon name="estate"></ion-icon>
+      </div>
+      <div class="information">
+        <p>保养单位</p>
+        <span>{{Maintenance}}</span>
+      </div>
+    </div>
+    <div>
+      <span class="circle" text-center>
+        <ion-icon name="group"></ion-icon>
+      </span>
+      <div class="information">
+        <p>班组</p>
+        <span>{{TeamGroup}}</span>
+      </div>
+    </div>
+  </div>
+</ion-content>

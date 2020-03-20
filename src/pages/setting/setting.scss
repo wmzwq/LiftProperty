@@ -1,0 +1,29 @@
+page-setting {
+  ion-content {
+    background-color: #FBFBFB !important;
+  }
+
+  ion-item {
+    background-color: #fff;
+    border-radius: 8px;
+  }
+
+  .item-inner {
+    border-bottom: none !important;
+  }
+
+  .item-ios,
+  .item-md {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .button-ios,
+  .button-md{
+    background-color: #2699FB;
+    border-radius: 0.8rem;
+    height: 3.2em;
+    box-shadow: none;
+  }
+
+}

@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>推送设置</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>困人推送</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>异常推送</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>检修推送</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+  <ion-item>
+    <ion-label>离线推送</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+  <div padding>
+    <button ion-button block (tap)="gotoLoginPage()">
+      注销
+    </button>
+  </div>
+</ion-content>

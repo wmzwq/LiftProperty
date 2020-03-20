@@ -1,0 +1,140 @@
+<div style="padding: 0;min-height:3rem;font-size: 1.4rem">
+    <ion-segment [(ngModel)]="main" (ionChange)="segmentChanged($event)">
+        <ion-segment-button value="malfunction">
+            故障排名
+            <div></div>
+        </ion-segment-button>
+        <ion-segment-button value="repair">
+            检修排名
+            <div></div>
+        </ion-segment-button>
+        <ion-segment-button value="safety-index">
+            健康指数排名
+            <div></div>
+        </ion-segment-button>
+        <div style="float: right;" (click)="gotoRankPage()">更多
+            <ion-icon name="more"></ion-icon>
+        </div>
+    </ion-segment>
+</div>
+<div [ngSwitch]="main">
+    <ion-list *ngSwitchCase="'malfunction'">
+        <ion-card class="rank">
+            <div id="default" style="display:none">
+                <img src="assets/imgs/no.png">
+                <span>暂无故障信息</span>
+            </div>
+            <ion-item id="first">
+                <div class="rank-bg-red">
+                    <div>1</div>
+                </div>
+                <p class="normal-font">{{firstName}}</p>
+                <div class="rank-hint">
+                    <p>{{firstFault}}次</p>
+                    <p class="font-small">故障/近30天</p>
+                </div>
+            </ion-item>
+            <ion-item id="second">
+                <div class="rank-bg-yellow">
+                    <div>2</div>
+                </div>
+                <p class="normal-font">{{secondName}}</p>
+                <div class="rank-hint">
+                    <p>{{secondFault}}次</p>
+                    <p class="font-small">故障/近30天</p>
+                </div>
+            </ion-item>
+            <ion-item id="third">
+                <div class="rank-bg-blue">
+                    <div>3</div>
+                </div>
+                <p class="normal-font">{{thirdName}}</p>
+                <div class="rank-hint">
+                    <p>{{thirdFault}}次</p>
+                    <p class="font-small">故障/近30天</p>
+                </div>
+            </ion-item>
+        </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'repair'">
+        <ion-card class="rank">
+            <div id="default" style="display:none">
+                <img src="assets/imgs/no.png">
+                <span>暂无检修时长信息</span>
+            </div>
+            <ion-item id="first">
+                <div class="rank-bg-red">
+                    <div>1</div>
+                </div>
+                <p class="normal-font">{{firstMName}}</p>
+                <div class="rank-hint">
+                    <p class="number">{{firstMaintenance}}</p>
+                    <p class="font-small">检修时长/近30天</p>
+                </div>
+            </ion-item>
+            <ion-item id="second">
+                <div class="rank-bg-yellow">
+                    <div>2</div>
+                </div>
+                <p class="normal-font">{{secondMName}}</p>
+                <div class="rank-hint">
+                    <p class="number">{{secondMaintenance}}</p>
+                    <p class="font-small">检修时长/近30天</p>
+                </div>
+            </ion-item>
+            <ion-item id="third">
+                <div class="rank-bg-blue">
+                    <div>3</div>
+                </div>
+                <p class="normal-font">{{thirdMName}}</p>
+                <div class="rank-hint">
+                    <p class="number">{{thirdMaintenance}}</p>
+                    <p class="font-small">检修时长/近30天</p>
+                </div>
+            </ion-item>
+
+        </ion-card>
+    </ion-list>
+    <ion-list *ngSwitchCase="'safety-index'">
+        <ion-card class="rank">
+            <div id="default" style="display:none">
+                <img src="assets/imgs/no.png">
+                <span>暂无健康指数信息</span>
+            </div>
+            <ion-item id="first">
+                <div class="rank-bg-red">
+                    <div>1</div>
+                </div>
+                <p class="normal-font">{{firstSName}}</p>
+                <div class="rank-hint">
+                    <p class="number">{{firstScore}}%</p>
+                    <p class="font-small">健康指数</p>
+                </div>
+            </ion-item>
+            <ion-item id="second">
+                <div class="rank-bg-yellow">
+                    <div>2</div>
+                </div>
+                <p class="normal-font">{{secondSName}}</p>
+                <div class="rank-hint">
+                    <p class="number">{{secondScore}}%</p>
+                    <p class="font-small">健康指数</p>
+                </div>
+            </ion-item>
+            <ion-item id="third">
+                <div class="rank-bg-blue">
+                    <div>3</div>
+                </div>
+                <p class="normal-font">{{thirdSName}}</p>
+                <div class="rank-hint">
+                    <p class="number">{{thirdScore}}%</p>
+                    <p class="font-small">健康指数</p>
+                </div>
+            </ion-item>
+
+        </ion-card>
+    </ion-list>
+</div>
+
+<!-- </ion-content> -->

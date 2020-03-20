@@ -1,0 +1,59 @@
+page-order-refuse {
+
+  //任务详情
+  .row-content ion-icon {
+    font-size: 1rem !important;
+  }
+
+  .row-content p {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+
+  ion-row{
+    padding: 0.8rem;
+  }
+
+  .row-type ion-col:last-child {
+    color: #78849E;
+  }
+
+  .line {
+    float: left;
+    width: 3px;
+    height: 16px;
+    border-radius: 6px;
+    margin-right: 0.8rem;
+    background-color: #2699FB;
+  }
+
+  .grid {
+    padding: 0;
+  }
+
+  span [name*=more] {
+    margin-left: 0.4rem;
+    font-size: 1.2rem;
+  }
+
+  ion-row {
+    border-bottom: 1px solid #F0F0F0;
+    color: #333;
+  }
+
+  ion-grid ion-row:last-child {
+    border-bottom: none;
+  }
+
+  //维修记录
+  .photo-container {
+    padding: 1rem;
+  }
+
+  .photo-container div {
+    margin: 0 auto;
+    width: 6rem;
+    background-color: #D9E1F2;
+    height: 6rem;
+  }
+}

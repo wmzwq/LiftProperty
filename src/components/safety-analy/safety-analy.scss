@@ -1,0 +1,167 @@
+safety-analy {
+    ion-content {
+        background-color: #fcfcfd !important;
+      }
+    
+      //segment
+      .segment-ios .segment-button,
+      .segment-md .segment-button {
+        color: #78849E;
+        border-style: none;
+      }
+    
+      .toolbar-ios .segment-button,
+      .toolbar-md .segment-button {
+        max-width: 66px;
+        height: auto;
+      }
+    
+      .toolbar-ios .segment-button:last-child,
+      .toolbar-md .segment-button:last-child {
+        max-width: 94px;
+      }
+    
+      .toolbar-ios .segment-button div,
+      .toolbar-md .segment-button div {
+        width: 35%;
+        height: 0.25rem;
+      }
+    
+      .segment-ios .segment-button.segment-activated,
+      .segment-md .segment-button.segment-activated {
+        color: #454F63;
+        background: none;
+        font-size: 1.4rem;
+      }
+    
+      .segment-ios .segment-button.segment-activated div,
+      .segment-md .segment-button.segment-activated div {
+        width: 35%;
+        height: 0.25rem;
+        background-color: #2699FB;
+        border-radius: 10px;
+        margin: 0 auto;
+      }
+    
+      .segment-md .segment-button {
+        // line-height: 2rem;
+      }
+    
+      //排名列表
+    
+      .rank {
+        margin-top: 1.2rem;
+      }
+    
+      .rank-bar {
+        padding-top: 0.6rem;
+        margin-left: 1.8rem;
+        font-size: 1.2rem;
+        color: #78849E;
+      }
+    
+      .rank-bar>div {
+        display: inline-block;
+        margin-right: 1rem;
+        min-height: 2rem;
+      }
+    
+      .rank-bar p {
+        margin: 0;
+      }
+    
+      .rank-selected {
+        font-size: 1.4rem;
+        color: #454F63;
+      }
+    
+      .rank-selected div {
+        margin: 3px auto;
+        width: 3rem;
+        height: 0.25rem;
+        border-radius: 6px;
+        background-color: #2699FB;
+      }
+    
+      .rank-bg-red,
+      .rank-bg-yellow,
+      .rank-bg-blue,
+      .rank-bg-gray {
+        float: left;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 0.4rem;
+        padding: 0.5rem;
+      }
+    
+      .rank-bg-red {
+        background-color: #FFEEEE;
+      }
+    
+      .rank-bg-yellow {
+        background-color: #FEF8EC;
+      }
+    
+      .rank-bg-blue {
+        background-color: #EBF1FF;
+      }
+      .rank-bg-gray{
+          background-color: #F5F5F5;
+      }
+    
+      .rank-bg-red div,
+      .rank-bg-yellow div,
+      .rank-bg-blue div,
+      .rank-bg-gray div{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+        color: #fff;
+        text-align: center;
+        line-height: 2rem;
+      }
+    
+      .rank-bg-red div {
+        background-color: #FF5858;
+      }
+    
+      .rank-bg-yellow div {
+        background-color: #FDBF41;
+      }
+    
+      .rank-bg-blue div {
+        background-color: #477EE7;
+      }
+    
+      .rank-bg-gray div{
+          background-color: #CFD8DD;
+      }
+    
+      .normal-font {
+        line-height: 3rem;
+        float: left;
+        color: #454F63;
+        margin-left: 1rem;
+      }
+    
+      .rank-hint {
+        float: right;
+        text-align: center;
+      }
+    
+      .rank ion-item {
+        border-bottom: 1px solid #F4F4F6;
+      }
+    
+      .font-small {
+        font-size: 1.2rem;
+      }
+    
+      .rank-hint p:nth-child(1) {
+        color: #454F63;
+      }
+    
+      .number{
+          font-size: 1.6rem;
+      }
+}

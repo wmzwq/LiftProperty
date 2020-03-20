@@ -1,0 +1,35 @@
+page-dtlist {
+
+    * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        background: #fafafa;
+      }
+      h2 {
+        
+      }
+      .progress-wrapper {
+        position: relative;
+        
+        font-size: 20px;
+      }
+      .current {
+        position: absolute;
+        color: #bbb;
+        font-weight: 100;
+        line-height: 1;
+      }
+      round-progress {
+        margin: auto;
+        width: 40px !important;
+        height: 40px !important;
+      }
+      .container {
+        width: 100%;
+        text-align: center;
+      }
+    
+ 
+}

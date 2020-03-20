@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>设备</ion-title>
+    <ion-buttons left>
+      <button ion-button icon-only (tap)="gotoUserPage()">
+        <ion-icon name="menus"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (tap)="gotoMessagePage()">
+        <ion-icon name="message"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="banner">
+    <div text-center>
+      <div class="num-con">
+        <p>{{cellNumber}}</p><span>在保小区数</span>
+      </div>
+      <div class="num-con">
+        <p>{{eleNumber}}</p><span>在保电梯数</span>
+      </div>
+    </div>
+  </div>
+  <div class="list-title">分区列表</div>
+  <ion-list >
+    <ion-card *ngFor="let item of list" (tap)="gotoLiftPage(item)">
+      <ion-item>
+        <ion-icon name="estate"></ion-icon><span>{{item.name}}</span>
+      </ion-item>
+      <div class="line"></div>
+      <div text-center>
+        <div class="num-detail">
+          <p>{{item.offLineNumber}}台</p><span>异常</span>
+        </div>
+        <div class="num-detail">
+          <p>{{item.serviceNumber}}台</p><span>检修</span>
+        </div>
+        <div class="num-detail">
+          <p>{{item.number}}台</p><span>总数</span>
+        </div>
+      </div>
+    </ion-card>
+  </ion-list>
+
+</ion-content>

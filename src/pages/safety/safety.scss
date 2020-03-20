@@ -1,0 +1,106 @@
+page-safety {
+  ion-content {
+    background: linear-gradient(180deg, #FFFFFF 10%, #F7F7FA 30%);
+  }
+
+  //圆环
+  .progress-wrapper{
+    margin: auto;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 16rem;
+    background-color: #fff;
+    border: 2px solid #F2F1FF;
+  }
+  round-progress {
+    margin: 0.3rem auto;
+    height: 15rem !important;
+    width: 15rem !important;
+  }
+
+  .current {
+    position: absolute;
+    color: #bbb;
+    font-weight: 100;
+    line-height: 1;
+  }
+
+  .progress-wrapper p {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    text-align: center;
+  }
+
+  .status {
+    width: 10rem;
+    line-height: 3.6rem;
+    background: linear-gradient(90deg, #63A3F4 16%, #66A3FE 84%);
+    border-radius: 35px;
+    color: white;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: auto;
+    box-shadow: 0px 4px 12px rgba(0, 87, 255, 0.18);
+  }
+
+  //参数
+  ion-grid {
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px rgba(69, 91, 99, 0.078);
+  }
+
+  .line {
+    display: inline-block;
+    height: 3rem;
+    width: 2px;
+    background-color: #f0f0f0;
+    margin: 1.4rem 0.2rem;
+  }
+
+  ion-grid p {
+    margin: 0 0 6px 0;
+    color: #78849E;
+  }
+
+  .col {
+    padding: 8px 20px;
+  }
+
+  //功能区
+  .func-con {
+    margin-top: 8px;
+  }
+
+  .item-md,
+  .item-ios {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .item-md p,
+  .item-ios p {
+    color: #333;
+  }
+
+  .item-inner {
+    border-bottom: none !important;
+    margin-left: 16px !important;
+  }
+
+  .func-con ion-icon {
+    margin: 0 !important;
+    color: #929EB7;
+    min-height: 2.2rem;
+    margin-left: 16px !important;
+  }
+
+  .item-md ion-icon:first-child,
+  .item-ios ion-icon:first-child {
+    color: rgba(38, 153, 251, 0.8);
+    min-height: 1.2rem;
+    font-size: 2rem;
+  }
+}

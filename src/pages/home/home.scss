@@ -1,0 +1,340 @@
+page-home {
+  ion-content {
+    background-color: #fcfcfd !important;
+  }
+
+  //可拆分头部样式
+
+  .bar-button-default-md,
+  .bar-button-default-ios {
+    color: #78849E;
+  }
+
+  .bar-button-ios {
+    font-size: 1.6rem;
+  }
+
+  .bar-button-md {
+    height: 22px;
+  }
+  .toolbar-ios,
+  .toolbar-md{
+    min-height: 4.8rem !important;
+  }
+  .toolbar-ios .segment-button,
+  .toolbar-md .segment-button {
+    max-width: 100%;
+    height: 4.6rem;
+    line-height: 4.6rem;
+    border-top: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    border-bottom: none;
+    border-left: none;
+    color: #959DAD;
+  }
+
+  .segment-ios .segment-button:last-of-type,
+  .segment-ios .segment-button:first-of-type {
+    border-radius: 0;
+  }
+
+  .segment-ios .segment-button.segment-activated,
+  .segment-md .segment-button.segment-activated {
+    color: #454F63;
+  }
+
+  .segment-ios .segment-button.segment-activated,
+  .segment-md .segment-button.segment-activated {
+    background: none;
+    border-bottom: 0.4rem solid #3497FD;
+  }
+
+  .segment-md .segment-button.activated,
+  .segment-md .segment-button.segment-activated {
+    border-top-color: #F0F0F0;
+    border-right-color: #F0F0F0;
+  }
+
+  //异常图表
+  .analy-container {
+    width: 100%;
+    height: 15rem;
+    background: url(../../assets/imgs/home-chart-bg.png) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+
+  //排名列表
+
+  .rank-bar {
+    padding-top: 0.8rem;
+    margin-left: 1.8rem;
+    font-size: 1.2rem;
+    color: #78849E;
+  }
+
+  .rank-bar>div {
+    display: inline-block;
+    margin-right: 1rem;
+    min-height: 2rem;
+  }
+
+  .rank-bar p {
+    margin: 0;
+  }
+
+  .rank-selected {
+    font-size: 1.4rem;
+    color: #454F63;
+  }
+
+  .rank-selected div {
+    margin: 3px auto;
+    width: 3rem;
+    height: 0.25rem;
+    border-radius: 6px;
+    background-color: #2699FB;
+  }
+
+  .rank-bg-red,
+  .rank-bg-yellow,
+  .rank-bg-blue {
+    float: left;
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 0.4rem;
+    padding: 0.5rem;
+  }
+
+  .rank-bg-red {
+    background-color: #FFEEEE;
+  }
+
+  .rank-bg-yellow {
+    background-color: #FEF8EC;
+  }
+
+  .rank-bg-blue {
+    background-color: #EBF1FF;
+  }
+
+  .rank-bg-red div,
+  .rank-bg-yellow div,
+  .rank-bg-blue div {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 2.2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 2.2rem;
+  }
+
+  .rank-bg-red div {
+    background-color: #FF5858;
+  }
+
+  .rank-bg-yellow div {
+    background-color: #FDBF41;
+  }
+
+  .rank-bg-blue div {
+    background-color: #477EE7;
+  }
+
+  .normal-font {
+    width: 55%;
+    line-height: 3rem;
+    float: left;
+    color: #454F63;
+    margin-left: 1rem;
+  }
+
+  .rank-hint {
+    width: 23%;
+    float: right;
+    text-align: center;
+  }
+
+  .rank ion-item {
+    border-bottom: 1px solid #F4F4F6;
+  }
+
+  .font-small {
+    font-size: 1.2rem;
+  }
+
+  .rank-hint p:nth-child(1) {
+    color: #454F63;
+  }
+
+  // item复写
+  .item-ios.item-block .item-inner,
+  .item-md.item-block .item-inner{
+    padding-right: 0;
+  }
+
+  //电梯维护图表
+  .chart-container {
+    width: 100%;
+    height: 20rem;
+    margin-top: 1rem;
+    background: url(../../assets/imgs/home-chart-bg.png) no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+  }
+
+  .chart-hint {
+    position: absolute;
+    z-index: 9999;
+    top: 5%;
+    left: 5%;
+  }
+
+  .chart-container {
+    width: 100%;
+  }
+ .child-div{
+  position: absolute;
+  z-index: 9999;
+  top: 42%;
+  left:42%;
+ }
+ .abnormal{
+  background-color: #FFA681;
+ }
+ .normal{
+  background-color: #3ACCE1;
+ }
+ .offline{
+  background-color: #CFCFCF;
+ }
+ .numberList{
+  background-color: #3497FD;
+ }
+  .blue-dot-big{
+    display: inline-block;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 3px;
+    margin-right: 0.3rem;
+  }
+  .child-p{
+    font-size: 1.2rem;
+    display: inline-block;
+  }
+  .chart-footer {
+    width: 60%;
+    position: absolute;
+    display: flex;
+    bottom: 1rem;
+    margin-left: 21%;
+    padding-top: -50px;
+    justify-content: space-around;
+  }
+  .child-footer{
+    float: left;
+  }
+  //日历
+  ion-calendar .calendar-row .calendar-col,
+  ion-calendar .calendar-row .calendar-col:last-child,
+  ion-calendar .calendar-row:last-child {
+    border: none;
+  }
+
+  .containner {
+    padding: 0.4rem;
+  }
+
+  ion-calendar .row:nth-child(1) {
+    padding: 0.5rem 0;
+  }
+
+  .calendar-hint {
+    font-size: 1.2rem;
+    color: #78849E;
+  }
+
+  .red-dot {
+    margin-left: 3rem;
+  }
+
+  .item-block {
+    min-height: 1rem;
+    padding: 1.4rem;
+  }
+
+  .label-ios,
+  .label-md {
+    margin: 0;
+  }
+
+  ion-calendar .calendar-row .not-this-month {
+    color: #ccc;
+    background: none;
+  }
+
+  ion-calendar .calendar-row .select,
+  ion-calendar .calendar-row .today {
+    border-radius: 6px;
+  }
+
+  .calendar-mark div {
+    width: 12rem;
+    text-align: center;
+  }
+
+  //年检电梯
+  .list-title {
+    color: #78849E;
+    margin-left: 1.2rem;
+    margin-top: 1.6rem;
+  }
+
+  .lift-info {
+    // font-size: 1.2rem;
+    color: #454F63;
+    margin: 0.4rem 0;
+  }
+
+  .lift-list,
+  .time-side p,
+  .list-title {
+    font-size: 1.2rem;
+  }
+
+  .time-side p {
+    margin-bottom: 0.8rem;
+  }
+
+  ion-row .blue-dot {
+    margin-right: 0.2rem;
+  }
+
+  .v-line {
+    display: inline-block;
+    background-color: #F4F4F6;
+    width: 2px;
+    height: 4rem;
+    margin: -1.7rem 0.6rem;
+  }
+
+  .time-side {
+    width: 26%;
+    margin-left: 0.8rem;
+  }
+
+  .lift-list>div {
+    display: inline-block;
+    padding: 0.8rem 0;
+    vertical-align: middle;
+  }
+
+  .lift-info ion-icon {
+    min-width: 1.7rem;
+    opacity: 0.8;
+  }
+
+  .wid-set{
+    width: 60%;
+  }
+}

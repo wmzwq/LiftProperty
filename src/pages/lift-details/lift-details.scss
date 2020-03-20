@@ -1,0 +1,32 @@
+page-lift-details {
+  ion-content {
+    background-color: #F7F7FA !important;
+  }
+
+  .item-ios,
+  .item-md {
+    font-size: 1.4rem;
+    color: #333;
+  }
+
+  .item-ios span:nth-child(2),
+  .item-md span:nth-child(2) {
+    color: #868686;
+  }
+
+  .item-ios.item-block .item-inner {
+    border-bottom: 0.55px solid #F0F0F0 !important;
+  }
+
+  .item-block {
+    min-height: 4rem;
+  }
+
+  ion-item-divider {
+    max-height: 12px;
+    min-height: 12px;
+  }
+  .item-ios-light, .item-divider-ios-light{
+      background: none;
+  }
+}

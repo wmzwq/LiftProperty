@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>报修</ion-title>
+    <ion-buttons left>
+      <button ion-button icon-only (tap)="gotoUserPage()">
+        <ion-icon name="menus"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (tap)="gotoMessagePage()">
+        <ion-icon name="message"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="list-title">
+    <span>任务列表</span>
+    <div (tap)="gotoHistoryPage()">报修历史<ion-icon name="more"></ion-icon>
+    </div>
+  </div>
+  <ion-list>
+    <ion-card class="mission-content">
+      <span class="top-line"></span>
+      <p>置信广场3号梯</p>
+      <p>运行中开门</p>
+      <span></span>
+      <div class="progress-on" text-center>
+        <div><span class="checked"></span>
+          <p>成功接单</p>
+        </div>
+        <div class="dot-gather">
+          <div></div>
+          <div></div>
+          <!-- <div></div> -->
+          <div></div>
+        </div>
+        <div><span class="uncheck"></span>
+          <p>到达现场</p>
+        </div>
+        <div class="dot-gather">
+          <div></div>
+          <div></div>
+          <!-- <div></div> -->
+          <div></div>
+        </div>
+        <div><span class="uncheck"></span>
+          <p>维修完成</p>
+        </div>
+      </div>
+    </ion-card>
+    <ion-card class="mission-content">
+      <span class="top-line"></span>
+      <p>置信广场3号梯</p>
+      <p>运行中开门</p>
+      <span></span>
+      <div class="progress-back">
+        <p text-center>工单已退回</p>
+      </div>
+    </ion-card>
+  </ion-list>
+  <div class="report" (tap)=gotoReportPage()></div>
+</ion-content>

@@ -1,0 +1,47 @@
+page-message {
+    ion-content {
+      background-color: #FBFBFB !important;
+    }
+  
+    .icon-bg {
+      width: 4rem;
+      background-color: #F1F9FF;
+      border-radius: 8px;
+    }
+  
+    .icon-bg ion-icon {
+      color: #2699FB;
+      line-height: 4rem;
+      min-width: 4rem;
+      text-align: center;
+    }
+  
+    .icon-bg,
+    .message {
+      float: left;
+      height: 4rem;
+    }
+  
+    ion-row {
+      border-bottom: 1px solid #f0f0f0;
+      margin-bottom: 1.4rem;
+    }
+  
+    span {
+      font-size: 1.4rem;
+    }
+  
+    p {
+      color: #78849E;
+      margin-top: 0.4rem;
+    }
+  
+    .remind-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      float: right;
+      background-color: red;
+    }
+  }
+  

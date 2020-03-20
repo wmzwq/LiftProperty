@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>异常列表</ion-title>
+    <span class="float-right" (tap)="gotoLiftDetailsPage()">电梯详情</span>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <span class="card-title">困人/非困人</span>
+  <ion-item-group class="card-bg">
+    <ion-item (tap)="gotoAbDetailsPage()"><span>困人</span><span item-right>10<ion-icon name="more"></ion-icon></span></ion-item>
+    <ion-item><span>非困人</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+  </ion-item-group>
+  <span class="card-title">故障类型</span>
+  <ion-item-group class="card-bg">
+    <ion-item><span>故障总数</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>冲顶</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>蹲底</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>超速</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>运行中开门</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>断电</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>警铃触发</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>开门故障</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>轿厢意外移动</span><span item-right>10<ion-icon></ion-icon></span></ion-item>
+  </ion-item-group>
+</ion-content>

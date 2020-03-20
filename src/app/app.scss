@@ -1,0 +1,125 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.menu-header{
+    background-image: url(../assets/imgs/musicList2.jpg);
+    height:28%;
+
+}
+.user-avatar {
+    padding-top:11%;
+    padding-left:6%;
+  }
+.user-avatar img{
+      width: 27%;
+      height: 26%;
+      border-radius:50%;
+  }
+.myname{
+      padding-left: 6%;
+      font-family: KaiTi;
+      color:white;
+      font-size: 1.2em;
+      display: block;
+      float: left;
+      margin-right: 4%;
+      padding-top:6px;
+  }
+.grade{
+      height: 16px;
+      width: 30px;
+      border: white 1px solid;
+      font-family: KaiTi;
+      font-size: 0.8em;
+      text-align: center;
+      color: white;
+      border-radius:8px;
+      display: block;
+      margin-top:9px;
+      float: left;
+  }
+  .grade1{
+    height: 22px;
+    width: 60px;
+    border: white 1px solid;
+    font-family: KaiTi;
+    font-size: 0.8em;
+    color: white;
+    border-radius: 8px;
+    display: block;
+    float: right;
+    margin-right:5%;
+    margin-top:5px;
+    text-align: center;
+    line-height: 22px;
+}
+.menu-list{
+    padding-top:3%;
+    height: 64%;
+}
+
+.menu-footer button{
+    color: black;
+}
+.iconColor{
+    color: gray;
+}
+ion-toast {
+    top: -44px !important;
+  }
+  .ion-md-alipay:before{
+  content:'\e624';
+  color:blue;
+  }
+  .ion-md-wxpay:before{
+  content:'\e622';
+  color: green;
+  }
+  .errorToast{
+      //.toast-message{
+      //  color: #a94442;
+      //}
+      .toast-wrapper {
+        //background: #eba6ac;
+        background: #f53d3d;
+      }
+    }
+    .warningToast{
+      .toast-wrapper {
+        background: #FCF8E3;
+        
+      }
+      .toast-wrapper .toast-message {
+          color: #CD9A62;
+      }
+      .toast-wrapper  .toast-button {
+          color: #CD9A62;
+      }
+    }
+    .generalToast{
+      //.toast-message{
+      //  color: #a94442;
+      //}
+      .toast-wrapper {
+        //background: #eba6ac;
+        background: blue;
+      }
+    }
+    .successToast{
+      .toast-wrapper {
+        background: #32db64;
+      }
+    }

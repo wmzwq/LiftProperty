@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+  
+    <ion-title><ion-searchbar placeholder=""  [(ngModel)]="searchValue"></ion-searchbar></ion-title>
+   
+    <ion-buttons right (tap)="search()">
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content >
+  <div *ngFor="let item of list" (tap)="gotoSafetyPage(item)">
+    <ion-grid  class="border">
+      <ion-row >
+        <ion-col col-2  class="side abnormal-color" *ngIf="item.Status=='轿顶检修'">检修</ion-col>
+        <ion-col col-2  class="side normal-color" *ngIf="item.Status=='正常'">{{item.Status}}</ion-col>
+        <ion-col col-2  class="side offline-color" *ngIf="item.Status=='离线'">{{item.Status}}</ion-col>
+        <ion-col col-8 class="span">{{item.address}}</ion-col>
+        <ion-col col-2  class="ri-side"><ion-icon name="more"></ion-icon></ion-col>
+      </ion-row>
+    </ion-grid>
+  </div> 
+</ion-content>

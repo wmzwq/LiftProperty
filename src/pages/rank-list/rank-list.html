@@ -1,0 +1,113 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>电梯排名</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top style="padding: 0;min-height:3rem;">
+    <ion-segment [(ngModel)]="mainPage" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="malfunction">
+        故障排名
+        <div></div>
+      </ion-segment-button>
+      <ion-segment-button value="repair">
+        检修排名
+        <div></div>
+      </ion-segment-button>
+      <ion-segment-button value="safety-index">
+        健康指数排名
+        <div></div>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]="mainPage">
+    <ion-list *ngSwitchCase="'malfunction'">
+      <ion-card class="rank">
+        <div id="isfault" style="display:none">
+          <img src="assets/imgs/no.png">
+          <span>暂无故障信息</span>
+        </div>
+        <ion-item id="first" *ngFor="let item of data1; let i = index">
+          <div class="rank-bg-red" *ngIf=" i+1  ==  1">
+            <div>{{ i+1 }}</div>
+          </div>
+          <div class="rank-bg-yellow" *ngIf=" i+1  ==  2">
+            <div>{{ i+1 }}</div>
+          </div>
+          <div class="rank-bg-blue" *ngIf=" i+1  ==  3">
+            <div>{{ i+1 }}</div>
+          </div>
+          <div class="rank-bg-gray" *ngIf="i+1  >=4">
+            <div>{{ i+1 }}</div>
+          </div>
+          <p class="normal-font">{{item.name}}</p>
+          <div class="rank-hint">
+            <p>{{item.number}}次</p>
+            <p class="font-small">故障/近30天</p>
+          </div>
+        </ion-item>
+       
+      </ion-card>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'repair'">
+      <ion-card class="rank">
+        <div id="isfault" style="display:none">
+          <img src="assets/imgs/no.png">
+          <span>暂无检修时长信息</span>
+        </div>
+        <ion-item id="first" *ngFor="let a of data2; let i = index">
+            <div class="rank-bg-red" *ngIf=" i+1  ==  1">
+                <div>{{ i+1 }}</div>
+              </div>
+              <div class="rank-bg-yellow" *ngIf=" i+1  ==  2">
+                <div>{{ i+1 }}</div>
+              </div>
+              <div class="rank-bg-blue" *ngIf=" i+1  ==  3">
+                <div>{{ i+1 }}</div>
+              </div>
+              <div class="rank-bg-gray" *ngIf="i+1  >=4">
+                <div>{{ i+1 }}</div>
+              </div>
+          <p class="normal-font">{{a.name}}</p>
+          <div class="rank-hint">
+            <p class="number">{{a.number}}</p>
+            <p class="font-small">检修时长/近30天</p>
+          </div>
+        </ion-item>
+        
+        
+      </ion-card>
+    </ion-list>
+    <ion-list *ngSwitchCase="'safety-index'">
+      <ion-card class="rank">
+        <div id="isfault" style="display:none">
+          <img src="assets/imgs/no.png">
+          <span>暂无健康指数信息</span>
+        </div>
+        <ion-item id="first" *ngFor="let b of data3; let i = index">
+            <div class="rank-bg-red" *ngIf=" i+1  ==  1">
+                <div>{{ i+1 }}</div>
+              </div>
+              <div class="rank-bg-yellow" *ngIf=" i+1  ==  2">
+                <div>{{ i+1 }}</div>
+              </div>
+              <div class="rank-bg-blue" *ngIf=" i+1  ==  3">
+                <div>{{ i+1 }}</div>
+              </div>
+              <div class="rank-bg-gray" *ngIf="i+1  >=4">
+                <div>{{ i+1 }}</div>
+              </div>
+          <p class="normal-font">{{b.name}}</p>
+          <div class="rank-hint">
+            <p class="number">{{b.number}}%</p>
+            <p class="font-small">健康指数</p>
+          </div>
+        </ion-item>
+       
+      </ion-card>
+    </ion-list>
+  </div>
+
+</ion-content>

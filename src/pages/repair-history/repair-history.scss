@@ -1,0 +1,73 @@
+page-repair-history {
+  ion-content {
+    background-color: #fcfcfd !important;
+  }
+
+  .bar-button-default-md,
+  .bar-button-default-ios {
+    color: #78849E;
+  }
+
+  .bar-button-ios {
+    font-size: 1.4rem;
+  }
+
+  .bar-button-md {
+    height: 22px;
+  }
+
+  //卡片间距
+  .padding-out{
+    padding: 0 0.6rem;
+  }
+
+  .card-md,.card-ios{
+    margin-top: 1.4rem;
+  }
+//任务列表
+  .lift-info {
+    color: #454F63;
+    margin: 0.4rem 0;
+  }
+
+  .lift-list,
+  .time-side p,
+  .list-title {
+    font-size: 1.2rem;
+  }
+
+  .time-side p {
+    margin-bottom: 0.8rem;
+  }
+
+  ion-row .blue-dot {
+    margin-right: 0.2rem;
+  }
+
+  .v-line {
+    display: inline-block;
+    background-color: #F4F4F6;
+    width: 2px;
+    height: 4rem;
+    margin: -1.7rem 1rem;
+  }
+
+  .time-side {
+    margin-left: 1rem;
+    // vertical-align: middle;
+  }
+
+  .lift-list>div {
+    display: inline-block;
+    padding: 0.8rem 0;
+    vertical-align: middle;
+  }
+
+  .lift-info ion-icon {
+    min-width: 1.7rem;
+    opacity: 0.8;
+  }
+  .wid-set{
+    width: 60%;
+  }
+}

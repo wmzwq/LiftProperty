@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>健康分析</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="progress-wrapper"  style="position: relative;">
+      <div class="current" [ngStyle]="getOverlayStyle()">{{ current }}%</div>
+      <p>电梯健康指数</p>
+      <round-progress [current]="current" [max]="max" [color]="color" [background]="background">
+      </round-progress>
+    </div>
+    <div class="status">在线</div>
+  </div>
+
+  <div padding>
+    <ion-grid (tap)="parameter()">
+      <ion-row>
+        <ion-col>
+          <p>项目名称</p> {{Pname}}
+        </ion-col>
+        <span class="line"></span>
+        <ion-col>
+          <p>电梯名称</p>{{name}}
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <div class="func-con">
+    <ion-item (tap)="fault()">
+      <ion-icon name="fault-process" item-start></ion-icon>
+      <p>电梯故障历史</p>
+      <ion-icon item-end name="arrow-forward"></ion-icon>
+    </ion-item>
+    <ion-item (tap)="real()">
+      <ion-icon name="analyze" item-start></ion-icon>
+      <p>电梯实时数据</p>
+      <ion-icon item-end name="arrow-forward"></ion-icon>
+    </ion-item>
+    <!-- <ion-item (tap)="run()">
+      <ion-icon name="operating-data" item-start></ion-icon>
+      <p>电梯运行数据</p>
+      <ion-icon item-end name="arrow-forward"></ion-icon>
+    </ion-item> -->
+    <!-- <ion-item (tap)="history()">
+      <ion-icon name="history" item-start></ion-icon>
+      <p>维保历史</p>
+      <ion-icon item-end name="arrow-forward"></ion-icon>
+    </ion-item> -->
+  </div>
+
+</ion-content>

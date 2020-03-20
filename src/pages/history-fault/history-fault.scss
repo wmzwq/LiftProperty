@@ -1,0 +1,89 @@
+page-history-fault {
+  ion-content {
+    background-color: #F7F7FA !important;
+  }
+  //可拆分头部样式
+
+  .toolbar-ios .segment-button,
+  .toolbar-md .segment-button {
+    max-width: 100%;
+    height: 4.6rem;
+    line-height: 4.6rem;
+    border-top: 1px solid #F0F0F0;
+    border-right: 1px solid #F0F0F0;
+    border-bottom: none;
+    border-left: none;
+    color: #959DAD;
+  }
+
+  .segment-ios .segment-button:last-of-type,
+  .segment-ios .segment-button:first-of-type {
+    border-radius: 0;
+  }
+
+  .segment-ios .segment-button.segment-activated,
+  .segment-md .segment-button.segment-activated {
+    color: #454F63;
+  }
+
+  .segment-ios .segment-button.segment-activated,
+  .segment-md .segment-button.segment-activated {
+    background: none;
+    border-bottom: 0.4rem solid #3497FD;
+  }
+
+  .segment-md .segment-button.activated,
+  .segment-md .segment-button.segment-activated {
+    border-top-color: #F0F0F0;
+    border-right-color: #F0F0F0;
+  }
+  //故障
+  .float-right {
+    float: right;
+    margin-right: 1.6rem;
+    color: #333;
+  }
+
+  .card-title {
+    color: #666;
+    margin-left: 0.8rem;
+    font-size: 1.2rem;
+  }
+
+  .item-ios,.item-md {
+    font-size: 1.4rem;
+    color: #333;
+  }
+
+  .item-block {
+    min-height: 4rem;
+  }
+
+  .item-inner {
+    border-bottom: 1px solid #ebecef !important;
+  }
+
+  .card-bg {
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .card-bg ion-item:first-child {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .card-bg ion-item:last-child {
+    border-radius: 0 0 8px 8px;
+  }
+
+  .card-bg ion-item:last-child .item-inner {
+    border-bottom-color: transparent !important;
+  }
+
+  ion-icon {
+    font-size: 1em;
+    margin-left: 0.4rem;
+    min-width: 1.4rem;
+  }
+
+}

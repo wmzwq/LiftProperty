@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title>历史故障</ion-title>
+  </ion-navbar>
+  <ion-toolbar no-border-top style="padding: 0;min-height:3.6rem;">
+    <ion-segment [(ngModel)]="mainPage" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="safetyAnaly">
+        本周数据
+      </ion-segment-button>
+      <ion-segment-button value="maintenance">
+        本月数据
+      </ion-segment-button>
+      <ion-segment-button value="annualSurvey">
+        本年数据
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <span class="card-title">困人/非困人</span>
+  <ion-item-group class="card-bg">
+    <ion-item (tap)="gotoAbDetailsPage()"><span>困人</span><span item-right>{{ekr}}<ion-icon name="more"></ion-icon></span>
+    </ion-item>
+    <ion-item><span>非困人</span><span item-right>{{efkr}}<ion-icon></ion-icon></span></ion-item>
+  </ion-item-group>
+  <span class="card-title">故障类型</span>
+  <ion-item-group class="card-bg">
+    <ion-item><span>故障总数</span><span item-right>{{eall}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>冲顶</span><span item-right>{{ecd}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>蹲底</span><span item-right>{{edd}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>超速</span><span item-right>{{ecs}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>运行中开门</span><span item-right>{{eyxkm}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>断电</span><span item-right>{{etd}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>警铃触发</span><span item-right>{{ejl}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>开门故障</span><span item-right>{{ekmgz}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>轿厢意外移动</span><span item-right>{{ejxywyd}}<ion-icon></ion-icon></span></ion-item>
+    <ion-item><span>非门区停梯</span><span item-right>{{efmqtt}}<ion-icon></ion-icon></span></ion-item>
+  </ion-item-group>
+</ion-content>

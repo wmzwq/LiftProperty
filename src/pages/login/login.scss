@@ -1,0 +1,62 @@
+page-login {
+  //背景图形
+  .circle,
+  .rectangle {
+    position: absolute;
+    background-color: #F3F7FF;
+    border-radius: 15rem;
+  }
+
+  .circle {
+    bottom: -4rem;
+    left: -4rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .rectangle {
+    right: -12rem;
+    top: 8rem;
+    width: 25rem;
+    height: 12rem;
+    transform: rotate(-50deg);
+  }
+
+  //logo
+  .logo {
+    width: 10rem;
+    height: 8rem;
+    background: url(../../assets/imgs/logo.png) no-repeat;
+    background-size: 100%;
+    margin: 30% auto 0;
+  }
+
+  //input
+  .input-box{
+    margin: 1.6rem 1rem 0;
+  }
+  .input-box ion-item{
+    box-shadow: 0px 4px 16px rgba(69, 91, 99, 0.078);
+    border-radius: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .item-ios.item-block .item-inner,
+  .item-md.item-block .item-inner{
+    border:none;
+  }
+
+  //button
+  .button-ios,
+  .button-md{
+    background-color: #2699FB;
+    border-radius: 0.8rem;
+    height: 3.2em;
+    margin-top: 4rem;
+    box-shadow: none;
+  }
+
+  .item > ion-icon, .item-inner > ion-icon{
+    min-height: 1.8rem;
+  }
+}

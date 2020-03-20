@@ -1,0 +1,59 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>报修历史</ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only>
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div class="padding-out">
+    <ion-card class="lift-list" (tap)="gotoDetailsPage()">
+      <div class="time-side" text-center>
+        <p>2019/06/25</p>
+        <span class="blue-dot"></span>
+        <label>维修完成</label>
+      </div>
+      <span class="v-line"></span>
+      <div class="wid-set">
+        <div class="lift-info">
+          <ion-icon name="lift-name"></ion-icon>
+          <span>电梯名称：创业中心1号楼创业中心1号楼</span>
+        </div>
+        <div class="lift-info">
+          <ion-icon name="position" text-center></ion-icon>
+         <span> 电梯位置：鹿城创业中心</span>
+        </div>
+        <div class="lift-info">
+          <ion-icon name="mission-type" text-center></ion-icon>
+          <span>维保类型：半月保</span>
+        </div>
+      </div>
+    </ion-card>
+    <ion-card class="lift-list" (tap)="gotoRefusePage()">
+      <div class="time-side" text-center>
+        <p>2019/06/25</p>
+        <span class="gray-dot"></span>
+        <label>工单退回</label>
+      </div>
+      <span class="v-line"></span>
+      <div class="wid-set">
+        <div class="lift-info ">
+          <ion-icon name="lift-name"></ion-icon>
+          电梯名称：<span>创业中心1号楼</span>
+        </div>
+        <div class="lift-info">
+          <ion-icon name="position" text-center></ion-icon>
+          电梯位置：<span>鹿城创业中心</span>
+        </div>
+        <div class="lift-info">
+          <ion-icon name="mission-type" text-center></ion-icon>
+          维保类型：<span>半月保</span>
+        </div>
+      </div>
+    </ion-card>
+  </div>
+</ion-content>
